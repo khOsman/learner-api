@@ -1,0 +1,25 @@
+{
+  "name": "learner-api",
+  "version": "1.0.0",
+  "description": "Read-only API for BISD Learner data from Salesforce",
+  "type": "module",
+  "main": "index.js",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "new-key": "node -e \"console.log(require('crypto').randomBytes(24).toString('hex'))\""
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
